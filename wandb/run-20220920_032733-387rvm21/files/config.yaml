@@ -1,0 +1,710 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.3
+    framework: huggingface
+    huggingface_version: 4.22.1
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    python_version: 3.10.4
+    start_time: 1663637253.022782
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 11
+      - 41
+      - 49
+      - 50
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 9
+      - 11
+      - 41
+      - 49
+      - 50
+      - 53
+      - 55
+      3:
+      - 7
+      - 19
+      - 23
+      4: 3.10.4
+      5: 0.13.3
+      6: 4.22.1
+      8:
+      - 1
+      - 5
+cfg/decoder/_target_:
+  desc: null
+  value: nemo.collections.asr.modules.ConvASRDecoder
+cfg/decoder/feat_in:
+  desc: null
+  value: 1024
+cfg/decoder/num_classes:
+  desc: null
+  value: 28
+cfg/decoder/vocabulary:
+  desc: null
+  value:
+  - ' '
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - g
+  - h
+  - i
+  - j
+  - k
+  - l
+  - m
+  - n
+  - o
+  - p
+  - q
+  - r
+  - s
+  - t
+  - u
+  - v
+  - w
+  - x
+  - y
+  - z
+  - ''''
+cfg/encoder/_target_:
+  desc: null
+  value: nemo.collections.asr.modules.ConvASREncoder
+cfg/encoder/activation:
+  desc: null
+  value: relu
+cfg/encoder/conv_mask:
+  desc: null
+  value: true
+cfg/encoder/feat_in:
+  desc: null
+  value: 64
+cfg/encoder/jasper:
+  desc: null
+  value:
+  - dilation:
+    - 1
+    dropout: 0.0
+    filters: 128
+    kernel:
+    - 11
+    repeat: 1
+    residual: true
+    se: true
+    se_context_size: -1
+    separable: true
+    stride:
+    - 1
+  - dilation:
+    - 1
+    dropout: 0.0
+    filters: 256
+    kernel:
+    - 13
+    repeat: 1
+    residual: true
+    se: true
+    se_context_size: -1
+    separable: true
+    stride:
+    - 1
+  - dilation:
+    - 1
+    dropout: 0.0
+    filters: 256
+    kernel:
+    - 15
+    repeat: 1
+    residual: true
+    se: true
+    se_context_size: -1
+    separable: true
+    stride:
+    - 1
+  - dilation:
+    - 1
+    dropout: 0.0
+    filters: 256
+    kernel:
+    - 17
+    repeat: 1
+    residual: true
+    se: true
+    se_context_size: -1
+    separable: true
+    stride:
+    - 1
+  - dilation:
+    - 1
+    dropout: 0.0
+    filters: 256
+    kernel:
+    - 19
+    repeat: 1
+    residual: true
+    se: true
+    se_context_size: -1
+    separable: true
+    stride:
+    - 1
+  - dilation:
+    - 1
+    dropout: 0.0
+    filters: 256
+    kernel:
+    - 21
+    repeat: 1
+    residual: false
+    se: true
+    se_context_size: -1
+    separable: true
+    stride:
+    - 1
+  - dilation:
+    - 1
+    dropout: 0.0
+    filters: 1024
+    kernel:
+    - 1
+    repeat: 1
+    residual: false
+    se: true
+    se_context_size: -1
+    separable: true
+    stride:
+    - 1
+cfg/nemo_version:
+  desc: null
+  value: 1.11.0
+cfg/optim/betas:
+  desc: null
+  value:
+  - 0.8
+  - 0.5
+cfg/optim/lr:
+  desc: null
+  value: 0.01
+cfg/optim/name:
+  desc: null
+  value: novograd
+cfg/optim/sched/last_epoch:
+  desc: null
+  value: -1
+cfg/optim/sched/min_lr:
+  desc: null
+  value: 0.0
+cfg/optim/sched/monitor:
+  desc: null
+  value: val_loss
+cfg/optim/sched/name:
+  desc: null
+  value: CosineAnnealing
+cfg/optim/sched/reduce_on_plateau:
+  desc: null
+  value: false
+cfg/optim/sched/warmup_ratio:
+  desc: null
+  value: None
+cfg/optim/sched/warmup_steps:
+  desc: null
+  value: None
+cfg/optim/weight_decay:
+  desc: null
+  value: 0.001
+cfg/preprocessor/_target_:
+  desc: null
+  value: nemo.collections.asr.modules.AudioToMelSpectrogramPreprocessor
+cfg/preprocessor/dither:
+  desc: null
+  value: 1.0e-05
+cfg/preprocessor/features:
+  desc: null
+  value: 64
+cfg/preprocessor/frame_splicing:
+  desc: null
+  value: 1
+cfg/preprocessor/n_fft:
+  desc: null
+  value: 512
+cfg/preprocessor/normalize:
+  desc: null
+  value: per_feature
+cfg/preprocessor/sample_rate:
+  desc: null
+  value: 16000
+cfg/preprocessor/stft_conv:
+  desc: null
+  value: false
+cfg/preprocessor/window:
+  desc: null
+  value: hann
+cfg/preprocessor/window_size:
+  desc: null
+  value: 0.02
+cfg/preprocessor/window_stride:
+  desc: null
+  value: 0.01
+cfg/spec_augment/_target_:
+  desc: null
+  value: nemo.collections.asr.modules.SpectrogramAugmentation
+cfg/spec_augment/rect_freq:
+  desc: null
+  value: 50
+cfg/spec_augment/rect_masks:
+  desc: null
+  value: 5
+cfg/spec_augment/rect_time:
+  desc: null
+  value: 120
+cfg/target:
+  desc: null
+  value: nemo.collections.asr.models.ctc_models.EncDecCTCModel
+cfg/train_ds/batch_size:
+  desc: null
+  value: 32
+cfg/train_ds/bucketing_batch_size:
+  desc: null
+  value: None
+cfg/train_ds/bucketing_strategy:
+  desc: null
+  value: synced_randomized
+cfg/train_ds/is_tarred:
+  desc: null
+  value: false
+cfg/train_ds/labels:
+  desc: null
+  value:
+  - ' '
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - g
+  - h
+  - i
+  - j
+  - k
+  - l
+  - m
+  - n
+  - o
+  - p
+  - q
+  - r
+  - s
+  - t
+  - u
+  - v
+  - w
+  - x
+  - y
+  - z
+  - ''''
+cfg/train_ds/manifest_filepath:
+  desc: null
+  value: data/an4/train_manifest.json
+cfg/train_ds/max_duration:
+  desc: null
+  value: 16.7
+cfg/train_ds/num_workers:
+  desc: null
+  value: 8
+cfg/train_ds/pin_memory:
+  desc: null
+  value: true
+cfg/train_ds/sample_rate:
+  desc: null
+  value: 16000
+cfg/train_ds/shuffle:
+  desc: null
+  value: true
+cfg/train_ds/shuffle_n:
+  desc: null
+  value: 2048
+cfg/train_ds/tarred_audio_filepaths:
+  desc: null
+  value: None
+cfg/train_ds/trim_silence:
+  desc: null
+  value: true
+cfg/validation_ds/batch_size:
+  desc: null
+  value: 32
+cfg/validation_ds/labels:
+  desc: null
+  value:
+  - ' '
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - g
+  - h
+  - i
+  - j
+  - k
+  - l
+  - m
+  - n
+  - o
+  - p
+  - q
+  - r
+  - s
+  - t
+  - u
+  - v
+  - w
+  - x
+  - y
+  - z
+  - ''''
+cfg/validation_ds/manifest_filepath:
+  desc: null
+  value: data/an4/test_manifest.json
+cfg/validation_ds/num_workers:
+  desc: null
+  value: 8
+cfg/validation_ds/pin_memory:
+  desc: null
+  value: true
+cfg/validation_ds/sample_rate:
+  desc: null
+  value: 16000
+cfg/validation_ds/shuffle:
+  desc: null
+  value: false
+dropout:
+  desc: null
+  value: 0.0
+exp_manager:
+  desc: null
+  value:
+    create_checkpoint_callback: true
+    create_tensorboard_logger: true
+    exp_dir: null
+    name: QuartzNet15x5
+labels:
+  desc: null
+  value:
+  - ' '
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - g
+  - h
+  - i
+  - j
+  - k
+  - l
+  - m
+  - n
+  - o
+  - p
+  - q
+  - r
+  - s
+  - t
+  - u
+  - v
+  - w
+  - x
+  - y
+  - z
+  - ''''
+model:
+  desc: null
+  value:
+    decoder:
+      _target_: nemo.collections.asr.modules.ConvASRDecoder
+      feat_in: 1024
+      num_classes: 28
+      vocabulary:
+      - ' '
+      - a
+      - b
+      - c
+      - d
+      - e
+      - f
+      - g
+      - h
+      - i
+      - j
+      - k
+      - l
+      - m
+      - n
+      - o
+      - p
+      - q
+      - r
+      - s
+      - t
+      - u
+      - v
+      - w
+      - x
+      - y
+      - z
+      - ''''
+    encoder:
+      _target_: nemo.collections.asr.modules.ConvASREncoder
+      activation: relu
+      conv_mask: true
+      feat_in: 64
+      jasper:
+      - dilation:
+        - 1
+        dropout: 0.0
+        filters: 128
+        kernel:
+        - 11
+        repeat: 1
+        residual: true
+        se: true
+        se_context_size: -1
+        separable: true
+        stride:
+        - 1
+      - dilation:
+        - 1
+        dropout: 0.0
+        filters: 256
+        kernel:
+        - 13
+        repeat: 1
+        residual: true
+        se: true
+        se_context_size: -1
+        separable: true
+        stride:
+        - 1
+      - dilation:
+        - 1
+        dropout: 0.0
+        filters: 256
+        kernel:
+        - 15
+        repeat: 1
+        residual: true
+        se: true
+        se_context_size: -1
+        separable: true
+        stride:
+        - 1
+      - dilation:
+        - 1
+        dropout: 0.0
+        filters: 256
+        kernel:
+        - 17
+        repeat: 1
+        residual: true
+        se: true
+        se_context_size: -1
+        separable: true
+        stride:
+        - 1
+      - dilation:
+        - 1
+        dropout: 0.0
+        filters: 256
+        kernel:
+        - 19
+        repeat: 1
+        residual: true
+        se: true
+        se_context_size: -1
+        separable: true
+        stride:
+        - 1
+      - dilation:
+        - 1
+        dropout: 0.0
+        filters: 256
+        kernel:
+        - 21
+        repeat: 1
+        residual: false
+        se: true
+        se_context_size: -1
+        separable: true
+        stride:
+        - 1
+      - dilation:
+        - 1
+        dropout: 0.0
+        filters: 1024
+        kernel:
+        - 1
+        repeat: 1
+        residual: false
+        se: true
+        se_context_size: -1
+        separable: true
+        stride:
+        - 1
+    optim:
+      betas:
+      - 0.8
+      - 0.5
+      lr: 0.01
+      name: novograd
+      sched:
+        last_epoch: -1
+        min_lr: 0.0
+        monitor: val_loss
+        name: CosineAnnealing
+        reduce_on_plateau: false
+        warmup_ratio: null
+        warmup_steps: null
+      weight_decay: 0.001
+    preprocessor:
+      _target_: nemo.collections.asr.modules.AudioToMelSpectrogramPreprocessor
+      dither: 1.0e-05
+      features: 64
+      frame_splicing: 1
+      n_fft: 512
+      normalize: per_feature
+      sample_rate: 16000
+      stft_conv: false
+      window: hann
+      window_size: 0.02
+      window_stride: 0.01
+    spec_augment:
+      _target_: nemo.collections.asr.modules.SpectrogramAugmentation
+      rect_freq: 50
+      rect_masks: 5
+      rect_time: 120
+    train_ds:
+      batch_size: 32
+      bucketing_batch_size: null
+      bucketing_strategy: synced_randomized
+      is_tarred: false
+      labels:
+      - ' '
+      - a
+      - b
+      - c
+      - d
+      - e
+      - f
+      - g
+      - h
+      - i
+      - j
+      - k
+      - l
+      - m
+      - n
+      - o
+      - p
+      - q
+      - r
+      - s
+      - t
+      - u
+      - v
+      - w
+      - x
+      - y
+      - z
+      - ''''
+      manifest_filepath: ???
+      max_duration: 16.7
+      num_workers: 8
+      pin_memory: true
+      sample_rate: 16000
+      shuffle: true
+      shuffle_n: 2048
+      tarred_audio_filepaths: null
+      trim_silence: true
+    validation_ds:
+      batch_size: 32
+      labels:
+      - ' '
+      - a
+      - b
+      - c
+      - d
+      - e
+      - f
+      - g
+      - h
+      - i
+      - j
+      - k
+      - l
+      - m
+      - n
+      - o
+      - p
+      - q
+      - r
+      - s
+      - t
+      - u
+      - v
+      - w
+      - x
+      - y
+      - z
+      - ''''
+      manifest_filepath: ???
+      num_workers: 8
+      pin_memory: true
+      sample_rate: 16000
+      shuffle: false
+name:
+  desc: null
+  value: QuartzNet15x5
+repeat:
+  desc: null
+  value: 1
+sample_rate:
+  desc: null
+  value: 16000
+separable:
+  desc: null
+  value: true
+trainer:
+  desc: null
+  value:
+    accelerator: gpu
+    accumulate_grad_batches: 1
+    benchmark: false
+    devices: 1
+    enable_checkpointing: false
+    log_every_n_steps: 1
+    logger: false
+    max_epochs: 5
+    max_steps: -1
+    num_nodes: 1
+    strategy: ddp
+    val_check_interval: 1.0

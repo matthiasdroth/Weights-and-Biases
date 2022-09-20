@@ -1,0 +1,8 @@
+wandb_version: 1
+
+dropout:
+  value: 0.07515275083268855
+epoch:
+  value: 8
+lr:
+  value: 0.007600348955780563

@@ -1,0 +1,57 @@
+
+{'name': 'QuartzNet15x5', 'sample_rate': 16000, 'repeat': 1, 'dropout': 0.0, 'separable': True, 'labels': [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', "'"], 'model': {'train_ds': {'manifest_filepath': '???', 'sample_rate': 16000, 'labels': [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', "'"], 'batch_size': 32, 'trim_silence': True, 'max_duration': 16.7, 'shuffle': True, 'num_workers': 8, 'pin_memory': True, 'is_tarred': False, 'tarred_audio_filepaths': None, 'shuffle_n': 2048, 'bucketing_strategy': 'synced_randomized', 'bucketing_batch_size': None}, 'validation_ds': {'manifest_filepath': '???', 'sample_rate': 16000, 'labels': [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', "'"], 'batch_size': 32, 'shuffle': False, 'num_workers': 8, 'pin_memory': True}, 'preprocessor': {'_target_': 'nemo.collections.asr.modules.AudioToMelSpectrogramPreprocessor', 'normalize': 'per_feature', 'window_size': 0.02, 'sample_rate': 16000, 'window_stride': 0.01, 'window': 'hann', 'features': 64, 'n_fft': 512, 'frame_splicing': 1, 'dither': 1e-05, 'stft_conv': False}, 'spec_augment': {'_target_': 'nemo.collections.asr.modules.SpectrogramAugmentation', 'rect_freq': 50, 'rect_masks': 5, 'rect_time': 120}, 'encoder': {'_target_': 'nemo.collections.asr.modules.ConvASREncoder', 'feat_in': 64, 'activation': 'relu', 'conv_mask': True, 'jasper': [{'filters': 128, 'repeat': 1, 'kernel': [11], 'stride': [1], 'dilation': [1], 'dropout': 0.0, 'residual': True, 'separable': True, 'se': True, 'se_context_size': -1}, {'filters': 256, 'repeat': 1, 'kernel': [13], 'stride': [1], 'dilation': [1], 'dropout': 0.0, 'residual': True, 'separable': True, 'se': True, 'se_context_size': -1}, {'filters': 256, 'repeat': 1, 'kernel': [15], 'stride': [1], 'dilation': [1], 'dropout': 0.0, 'residual': True, 'separable': True, 'se': True, 'se_context_size': -1}, {'filters': 256, 'repeat': 1, 'kernel': [17], 'stride': [1], 'dilation': [1], 'dropout': 0.0, 'residual': True, 'separable': True, 'se': True, 'se_context_size': -1}, {'filters': 256, 'repeat': 1, 'kernel': [19], 'stride': [1], 'dilation': [1], 'dropout': 0.0, 'residual': True, 'separable': True, 'se': True, 'se_context_size': -1}, {'filters': 256, 'repeat': 1, 'kernel': [21], 'stride': [1], 'dilation': [1], 'dropout': 0.0, 'residual': False, 'separable': True, 'se': True, 'se_context_size': -1}, {'filters': 1024, 'repeat': 1, 'kernel': [1], 'stride': [1], 'dilation': [1], 'dropout': 0.0, 'residual': False, 'separable': True, 'se': True, 'se_context_size': -1}]}, 'decoder': {'_target_': 'nemo.collections.asr.modules.ConvASRDecoder', 'feat_in': 1024, 'num_classes': 28, 'vocabulary': [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', "'"]}, 'optim': {'name': 'novograd', 'lr': 0.01, 'betas': [0.8, 0.5], 'weight_decay': 0.001, 'sched': {'name': 'CosineAnnealing', 'monitor': 'val_loss', 'reduce_on_plateau': False, 'warmup_steps': None, 'warmup_ratio': None, 'min_lr': 0.0, 'last_epoch': -1}}}, 'trainer': {'devices': 1, 'max_epochs': 5, 'max_steps': -1, 'num_nodes': 1, 'accelerator': 'gpu', 'strategy': 'ddp', 'accumulate_grad_batches': 1, 'enable_checkpointing': False, 'logger': False, 'log_every_n_steps': 1, 'val_check_interval': 1.0, 'benchmark': False}, 'exp_manager': {'exp_dir': None, 'name': 'QuartzNet15x5', 'create_tensorboard_logger': True, 'create_checkpoint_callback': True}}
+[NeMo W 2022-09-20 03:37:27 nemo_logging:349] /home/matthias/anaconda3/envs/nemo/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:347: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+      rank_zero_warn(
+GPU available: True, used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[NeMo I 2022-09-20 03:37:32 audio_to_text_dataset:41] Model level config does not contain `sample_rate`, please explicitly provide `sample_rate` to the dataloaders.
+[NeMo I 2022-09-20 03:37:32 audio_to_text_dataset:41] Model level config does not contain `labels`, please explicitly provide `labels` to the dataloaders.
+[NeMo I 2022-09-20 03:37:32 collections:194] Dataset loaded with 948 files totalling 0.71 hours
+[NeMo I 2022-09-20 03:37:32 collections:195] 0 files were filtered totalling 0.00 hours
+[NeMo I 2022-09-20 03:37:32 audio_to_text_dataset:41] Model level config does not contain `sample_rate`, please explicitly provide `sample_rate` to the dataloaders.
+[NeMo I 2022-09-20 03:37:32 audio_to_text_dataset:41] Model level config does not contain `labels`, please explicitly provide `labels` to the dataloaders.
+[NeMo I 2022-09-20 03:37:32 collections:194] Dataset loaded with 130 files totalling 0.10 hours
+[NeMo I 2022-09-20 03:37:32 collections:195] 0 files were filtered totalling 0.00 hours
+[NeMo I 2022-09-20 03:37:32 features:223] PADDING: 16
+[NeMo W 2022-09-20 03:37:32 nemo_logging:349] /home/matthias/anaconda3/envs/nemo/lib/python3.10/site-packages/torch/utils/data/dataloader.py:487: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+      warnings.warn(_create_warning_msg(
+[NeMo I 2022-09-20 03:37:38 modelPT:597] Optimizer config = Novograd (
+    Parameter Group 0
+        amsgrad: False
+        betas: [0.8, 0.5]
+        eps: 1e-08
+        grad_averaging: False
+        lr: 0.01
+        weight_decay: 0.001
+    )
+[NeMo I 2022-09-20 03:37:38 lr_scheduler:910] Scheduler "<nemo.core.optim.lr_scheduler.CosineAnnealing object at 0x7f84b0923340>"
+    will be used during training (effective maximum steps = 300) -
+    Parameters :
+    (warmup_steps: null
+    warmup_ratio: null
+    min_lr: 0.0
+    last_epoch: -1
+    max_steps: 300
+    )
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name              | Type                              | Params
+------------------------------------------------------------------------
+0 | preprocessor      | AudioToMelSpectrogramPreprocessor | 0
+1 | encoder           | ConvASREncoder                    | 1.2 M
+2 | decoder           | ConvASRDecoder                    | 29.7 K
+3 | loss              | CTCLoss                           | 0
+4 | spec_augmentation | SpectrogramAugmentation           | 0
+5 | _wer              | WER                               | 0
+------------------------------------------------------------------------
+1.2 M     Trainable params
+0         Non-trainable params
+1.2 M     Total params
+4.836     Total estimated model params size (MB)
+Create sweep with ID: 09un31qf
+Sweep URL: https://wandb.ai/mdroth/ASR/sweeps/09un31qf
+[34m[1mwandb[39m[22m: [33mWARNING[39m Malformed sweep config detected! This may cause your sweep to behave in unexpected ways.
+[34m[1mwandb[39m[22m: [33mWARNING[39m To avoid this, please fix the sweep config schema violations below:
+[34m[1mwandb[39m[22m: [33mWARNING[39m   Violation 1. lr uses log_uniform, where min/max specify base-e exponents. Use log_uniform_values to specify limit values.
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

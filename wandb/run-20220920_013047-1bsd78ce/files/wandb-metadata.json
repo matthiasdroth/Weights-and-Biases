@@ -1,0 +1,23 @@
+{
+    "os": "Linux-5.15.0-46-generic-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-09-19T23:30:50.260663",
+    "startedAt": "2022-09-19T23:30:47.959904",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "Desktop/Weights-and-Biases/ASR_with_NeMo.ipynb",
+    "root": "/home/matthias/Desktop/Weights-and-Biases",
+    "git": {
+        "remote": "https://github.com/matthiasdroth/Weights-and-Biases.git",
+        "commit": "b50c9b080b165dac01d6b0c8edd6794a9944f4c3"
+    },
+    "email": "38705818+MRD-Git@users.noreply.github.com",
+    "host": "MLM",
+    "username": "matthias",
+    "executable": "/home/matthias/anaconda3/envs/wandb/bin/python"
+}

@@ -1,0 +1,343 @@
+2022-09-20 03:27:33,023 INFO    StreamThr :10972 [internal.py:wandb_internal():88] W&B internal server running at pid: 10972, started at: 2022-09-20 03:27:33.023295
+2022-09-20 03:27:33,024 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: status
+2022-09-20 03:27:33,025 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: status
+2022-09-20 03:27:33,033 DEBUG   SenderThread:10972 [sender.py:send():301] send: header
+2022-09-20 03:27:33,033 INFO    WriterThread:10972 [datastore.py:open_for_write():75] open: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/run-387rvm21.wandb
+2022-09-20 03:27:33,041 DEBUG   SenderThread:10972 [sender.py:send():301] send: run
+2022-09-20 03:27:33,042 INFO    SenderThread:10972 [sender.py:_maybe_setup_resume():577] checking resume status for None/ASR/387rvm21
+2022-09-20 03:27:35,523 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: check_version
+2022-09-20 03:27:35,525 INFO    SenderThread:10972 [dir_watcher.py:__init__():216] watching files in: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files
+2022-09-20 03:27:35,525 INFO    SenderThread:10972 [sender.py:_start_run_threads():912] run started: 387rvm21 with start time 1663637253.022782
+2022-09-20 03:27:35,526 DEBUG   SenderThread:10972 [sender.py:send():301] send: summary
+2022-09-20 03:27:35,526 INFO    SenderThread:10972 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 03:27:35,527 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: check_version
+2022-09-20 03:27:36,529 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_created():275] file/dir created: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/wandb-summary.json
+2022-09-20 03:27:36,817 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: run_start
+2022-09-20 03:27:36,819 DEBUG   HandlerThread:10972 [meta.py:__init__():34] meta init
+2022-09-20 03:27:36,820 DEBUG   HandlerThread:10972 [meta.py:__init__():49] meta init done
+2022-09-20 03:27:36,820 DEBUG   HandlerThread:10972 [meta.py:probe():215] probe
+2022-09-20 03:27:36,823 DEBUG   HandlerThread:10972 [meta.py:_setup_git():205] setup git
+2022-09-20 03:27:36,846 DEBUG   HandlerThread:10972 [meta.py:_setup_git():212] setup git done
+2022-09-20 03:27:36,846 DEBUG   HandlerThread:10972 [meta.py:_save_pip():53] save pip
+2022-09-20 03:27:36,848 DEBUG   HandlerThread:10972 [meta.py:_save_pip():67] save pip done
+2022-09-20 03:27:36,849 DEBUG   HandlerThread:10972 [meta.py:_save_conda():74] save conda
+2022-09-20 03:27:37,526 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_created():275] file/dir created: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/conda-environment.yaml
+2022-09-20 03:27:37,526 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_created():275] file/dir created: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/requirements.txt
+2022-09-20 03:27:39,526 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/conda-environment.yaml
+2022-09-20 03:27:39,607 DEBUG   HandlerThread:10972 [meta.py:_save_conda():84] save conda done
+2022-09-20 03:27:39,607 DEBUG   HandlerThread:10972 [meta.py:probe():253] probe done
+2022-09-20 03:27:39,608 DEBUG   SenderThread:10972 [sender.py:send():301] send: files
+2022-09-20 03:27:39,608 INFO    SenderThread:10972 [sender.py:_save_file():1155] saving file wandb-metadata.json with policy now
+2022-09-20 03:27:39,615 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:27:39,615 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:27:39,626 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:27:39,627 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:27:40,128 DEBUG   SenderThread:10972 [sender.py:send():301] send: telemetry
+2022-09-20 03:27:40,128 DEBUG   SenderThread:10972 [sender.py:send():301] send: metric
+2022-09-20 03:27:40,128 DEBUG   SenderThread:10972 [sender.py:send():301] send: telemetry
+2022-09-20 03:27:40,129 DEBUG   SenderThread:10972 [sender.py:send():301] send: metric
+2022-09-20 03:27:40,129 WARNING SenderThread:10972 [sender.py:send_metric():1111] Seen metric with glob (shouldn't happen)
+2022-09-20 03:27:40,130 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:27:40,528 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_created():275] file/dir created: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/wandb-metadata.json
+2022-09-20 03:27:40,887 INFO    Thread-2883:10972 [upload_job.py:push():139] Uploaded file /tmp/tmpe9ty_0p0wandb/wynuoabq-wandb-metadata.json
+2022-09-20 03:27:55,138 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:27:55,138 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:28:05,544 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/config.yaml
+2022-09-20 03:28:10,728 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:28:10,729 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:28:26,324 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:28:26,325 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:28:41,841 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:28:41,841 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:28:57,503 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:28:57,503 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:29:13,075 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:29:13,076 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:29:28,707 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:29:28,708 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:29:44,795 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:29:44,796 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:30:00,707 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:30:00,708 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:30:16,411 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:30:16,412 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:30:32,131 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:30:32,132 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:30:47,988 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:30:47,988 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:31:03,273 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:31:03,273 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:31:18,885 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:31:18,886 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:31:35,285 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:31:35,286 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:31:51,833 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:31:51,834 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:32:08,241 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:32:08,242 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:32:23,725 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:32:23,726 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:32:39,519 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:32:39,520 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:32:55,440 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:32:55,440 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:33:11,357 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:33:11,357 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:33:27,034 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:33:27,035 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:33:43,238 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:33:43,238 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:33:58,863 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:33:58,864 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:34:14,638 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:34:14,638 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:34:30,746 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:34:30,747 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:34:46,398 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:34:46,399 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:35:02,140 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:35:02,141 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:35:17,621 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:35:17,622 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:35:33,160 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:35:33,161 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:35:48,652 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:35:48,653 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:36:04,050 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:36:04,051 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:36:19,454 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:36:19,455 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:36:35,593 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:36:35,593 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:36:51,737 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:36:51,737 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:37:07,385 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:37:07,386 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:37:15,104 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:37:15,104 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:37:15,149 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:37:15,149 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:37:15,247 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:37:15,885 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_created():275] file/dir created: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:37:17,886 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:37:22,847 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:37:22,847 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:37:24,822 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:37:24,822 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:37:24,822 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:37:24,822 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:37:24,840 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:37:27,320 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:37:27,320 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:37:27,327 DEBUG   SenderThread:10972 [sender.py:send():301] send: telemetry
+2022-09-20 03:37:27,328 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,329 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,329 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,329 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,329 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,329 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,330 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,330 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,330 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:27,337 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:37:27,337 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:37:27,469 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:37:29,895 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:37:32,386 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:37:32,386 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:37:32,386 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:37:32,387 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:37:32,405 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:37:32,853 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:37:32,853 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:37:33,034 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:37:33,034 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:37:33,071 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:37:33,898 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:37:35,899 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:37:37,983 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:37:37,996 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:37:38,025 DEBUG   SenderThread:10972 [sender.py:send():301] send: config
+2022-09-20 03:37:38,323 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:37:38,324 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:37:39,318 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:37:39,318 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:37:39,415 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:37:39,902 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:37:45,912 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/config.yaml
+2022-09-20 03:37:53,914 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:37:53,914 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:38:09,521 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:38:09,521 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:38:25,117 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:38:25,118 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:38:41,118 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:38:41,118 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:38:55,959 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:38:55,960 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:38:56,000 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:38:56,000 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:38:56,091 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:38:56,673 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:38:56,674 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:39:01,831 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:39:01,831 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:39:01,834 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: pause
+2022-09-20 03:39:01,834 INFO    HandlerThread:10972 [handler.py:handle_request_pause():696] stopping system metrics thread
+2022-09-20 03:39:01,850 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:39:12,218 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:39:12,219 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:39:26,052 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: resume
+2022-09-20 03:39:26,052 INFO    HandlerThread:10972 [handler.py:handle_request_resume():687] starting system metrics thread
+2022-09-20 03:39:27,933 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: stop_status
+2022-09-20 03:39:27,934 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: stop_status
+2022-09-20 03:39:29,706 DEBUG   SenderThread:10972 [sender.py:send():301] send: exit
+2022-09-20 03:39:29,706 INFO    SenderThread:10972 [sender.py:send_exit():437] handling exit code: 0
+2022-09-20 03:39:29,706 INFO    SenderThread:10972 [sender.py:send_exit():439] handling runtime: 8
+2022-09-20 03:39:29,707 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:29,707 INFO    SenderThread:10972 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 03:39:29,707 INFO    SenderThread:10972 [sender.py:send_exit():445] send defer
+2022-09-20 03:39:29,707 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:29,707 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:29,707 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 0
+2022-09-20 03:39:29,708 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:29,708 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 0
+2022-09-20 03:39:29,708 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 1
+2022-09-20 03:39:29,708 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:29,708 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 1
+2022-09-20 03:39:29,798 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:29,798 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 1
+2022-09-20 03:39:29,798 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 2
+2022-09-20 03:39:29,799 DEBUG   SenderThread:10972 [sender.py:send():301] send: stats
+2022-09-20 03:39:29,799 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:29,799 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 2
+2022-09-20 03:39:29,799 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:29,799 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 2
+2022-09-20 03:39:29,799 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 3
+2022-09-20 03:39:29,799 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:29,800 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 3
+2022-09-20 03:39:29,800 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:29,800 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 3
+2022-09-20 03:39:29,800 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 4
+2022-09-20 03:39:29,800 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:29,800 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 4
+2022-09-20 03:39:29,800 DEBUG   SenderThread:10972 [sender.py:send():301] send: summary
+2022-09-20 03:39:29,800 INFO    SenderThread:10972 [sender.py:_save_file():1155] saving file wandb-summary.json with policy end
+2022-09-20 03:39:29,801 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:29,801 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 4
+2022-09-20 03:39:29,801 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 5
+2022-09-20 03:39:29,801 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:29,801 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 5
+2022-09-20 03:39:29,801 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:29,801 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 5
+2022-09-20 03:39:29,801 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 6
+2022-09-20 03:39:29,801 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:29,801 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 6
+2022-09-20 03:39:29,801 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:29,801 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 6
+2022-09-20 03:39:29,809 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:29,984 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/wandb-summary.json
+2022-09-20 03:39:29,984 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:39:31,544 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 7
+2022-09-20 03:39:31,558 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:31,559 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:31,560 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 7
+2022-09-20 03:39:31,561 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:31,561 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 7
+2022-09-20 03:39:31,561 INFO    SenderThread:10972 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-09-20 03:39:31,663 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:31,985 INFO    Thread-2879:10972 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:39:31,986 INFO    SenderThread:10972 [dir_watcher.py:finish():392] scan: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files
+2022-09-20 03:39:31,987 INFO    SenderThread:10972 [dir_watcher.py:finish():406] scan save: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/wandb-metadata.json wandb-metadata.json
+2022-09-20 03:39:31,987 INFO    SenderThread:10972 [dir_watcher.py:finish():406] scan save: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/wandb-summary.json wandb-summary.json
+2022-09-20 03:39:31,988 INFO    SenderThread:10972 [dir_watcher.py:finish():406] scan save: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/conda-environment.yaml conda-environment.yaml
+2022-09-20 03:39:31,989 INFO    SenderThread:10972 [dir_watcher.py:finish():406] scan save: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/config.yaml config.yaml
+2022-09-20 03:39:31,995 INFO    SenderThread:10972 [dir_watcher.py:finish():406] scan save: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log output.log
+2022-09-20 03:39:32,014 INFO    SenderThread:10972 [dir_watcher.py:finish():406] scan save: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/requirements.txt requirements.txt
+2022-09-20 03:39:32,017 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 8
+2022-09-20 03:39:32,017 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,019 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:32,020 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 8
+2022-09-20 03:39:32,021 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:32,026 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 8
+2022-09-20 03:39:32,029 INFO    SenderThread:10972 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-20 03:39:32,121 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,121 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,224 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,224 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,326 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,327 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,432 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,432 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,540 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,541 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,673 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,676 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,790 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,790 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,893 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,893 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:32,996 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:32,997 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,099 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,099 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,202 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,202 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,304 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,305 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,407 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,408 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,510 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,511 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,614 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,614 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,717 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,718 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,821 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,821 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,831 INFO    Thread-2896:10972 [upload_job.py:push():139] Uploaded file /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/output.log
+2022-09-20 03:39:33,835 INFO    Thread-2897:10972 [upload_job.py:push():139] Uploaded file /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/requirements.txt
+2022-09-20 03:39:33,839 INFO    Thread-2894:10972 [upload_job.py:push():139] Uploaded file /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/conda-environment.yaml
+2022-09-20 03:39:33,909 INFO    Thread-2893:10972 [upload_job.py:push():139] Uploaded file /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/wandb-summary.json
+2022-09-20 03:39:33,924 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:33,924 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:33,989 INFO    Thread-2895:10972 [upload_job.py:push():139] Uploaded file /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/files/config.yaml
+2022-09-20 03:39:34,027 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:34,028 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:34,130 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:34,131 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:34,191 INFO    Thread-2878 (_thread_body):10972 [sender.py:transition_state():458] send defer: 9
+2022-09-20 03:39:34,192 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:34,192 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 9
+2022-09-20 03:39:34,193 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:34,193 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 9
+2022-09-20 03:39:34,233 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:35,104 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 10
+2022-09-20 03:39:35,104 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:35,106 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:35,106 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 10
+2022-09-20 03:39:35,107 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:35,107 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 10
+2022-09-20 03:39:35,108 INFO    SenderThread:10972 [sender.py:transition_state():458] send defer: 11
+2022-09-20 03:39:35,110 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: defer
+2022-09-20 03:39:35,110 INFO    HandlerThread:10972 [handler.py:handle_request_defer():161] handle defer: 11
+2022-09-20 03:39:35,111 DEBUG   SenderThread:10972 [sender.py:send():301] send: final
+2022-09-20 03:39:35,111 DEBUG   SenderThread:10972 [sender.py:send():301] send: footer
+2022-09-20 03:39:35,111 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: defer
+2022-09-20 03:39:35,112 INFO    SenderThread:10972 [sender.py:send_request_defer():454] handle sender defer: 11
+2022-09-20 03:39:35,210 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: poll_exit
+2022-09-20 03:39:35,211 DEBUG   SenderThread:10972 [sender.py:send_request():315] send_request: poll_exit
+2022-09-20 03:39:35,211 INFO    SenderThread:10972 [file_pusher.py:join():173] waiting for file pusher
+2022-09-20 03:39:36,331 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: sampled_history
+2022-09-20 03:39:36,333 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: get_summary
+2022-09-20 03:39:36,334 INFO    MainThread:10972 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-09-20 03:39:36,335 INFO    MainThread:10972 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-09-20 03:39:36,335 INFO    MainThread:10972 [wandb_run.py:_footer_sync_info():3277] logging synced files
+2022-09-20 03:39:36,336 DEBUG   HandlerThread:10972 [handler.py:handle_request():138] handle_request: shutdown
+2022-09-20 03:39:36,337 INFO    HandlerThread:10972 [handler.py:finish():807] shutting down handler
+2022-09-20 03:39:37,113 INFO    WriterThread:10972 [datastore.py:close():279] close: /home/matthias/Desktop/Weights-and-Biases/wandb/run-20220920_032733-387rvm21/run-387rvm21.wandb
+2022-09-20 03:39:37,229 INFO    SenderThread:10972 [sender.py:finish():1315] shutting down sender
+2022-09-20 03:39:37,229 INFO    SenderThread:10972 [file_pusher.py:finish():168] shutting down file pusher
+2022-09-20 03:39:37,230 INFO    SenderThread:10972 [file_pusher.py:join():173] waiting for file pusher
+2022-09-20 03:39:37,341 INFO    MainThread:10972 [internal.py:handle_exit():78] Internal process exited
+2022-09-20 03:39:37,341 INFO    MainThread:10972 [internal.py:handle_exit():78] Internal process exited
