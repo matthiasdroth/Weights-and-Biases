@@ -1,6 +1,6 @@
 <img src="images/wandb_logo_full.png" width="30%">
 
-First: [ASR workshop](https://asr-workshop.wandb.ai/agenda/session/791116) with video and a [Colab notebook](https://colab.research.google.com/drive/1Vy_-vEjP3ExxtXU8C-D80A2uwvmrxUgU#scrollTo=LvvB8Uu10Z0o).
+First: [ASR workshop](https://asr-workshop.wandb.ai/agenda/session/791116) with video, a [Colab notebook](https://colab.research.google.com/drive/1Vy_-vEjP3ExxtXU8C-D80A2uwvmrxUgU#scrollTo=LvvB8Uu10Z0o), and [transformers](https://huggingface.co/docs/transformers/tasks/asr).
 
 Then: [Weights & Biases](https://wandb.ai/site) > Products => go through the following:
 
